@@ -1,10 +1,10 @@
-$primary: rgb(34,32,81);
-$secondary: rgb(78,255,187);
+$primary: #333;
+$secondary: #B79563;
 
 $font-main: 'Open Sans', sans-serif;
 
 @import url('https://fonts.googleapis.com/css?family=Chivo|Pathway+Gothic+One');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Great+Vibes');
 
 // mixins
 @mixin transition($args...) {
@@ -97,6 +97,51 @@ html body {
 		header {
 			padding: 1em;
 		}
+	}
+}
+
+#masthead.site-header {
+	background: $primary;
+	padding-top: 1.5em;
+
+	.site-branding {
+		width: 40%;
+		margin-bottom: 1em;
+	}
+
+	.site-title a {
+		font-family: 'Great Vibes', cursive;
+		color: $secondary;
+		font-size: 2em;
+		line-height: 120%;
+		font-weight: 100;
+	}
+
+	.site-description {
+		margin-top: -1em;
+
+		p {
+			color: $secondary;
+			//color: lighten($secondary, 20%);
+			font-weight: 700;
+			margin: 0 0 0.5em;
+			position: relative;
+				left: 14px;
+
+			&:first-child {
+				position: relative;
+				left: 14px;
+				top: -2px;
+				font-weight: 700;
+				color: lighten($secondary, 35%);
+				//color: $secondary;
+			}
+		}
+	}
+
+	// nav
+	.storefront-primary-navigation {
+		background: $secondary;
 	}
 }
 
