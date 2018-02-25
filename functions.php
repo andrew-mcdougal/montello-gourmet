@@ -16,25 +16,76 @@ function storefront_homepage_content() {
 		get_template_part( 'content', 'homepage' );
 
 		?>
+
+
+
 			<div class="entry-content">
-			<!-- Testimonials -->
-			<h3 class="feedback">Customer feedback</h3>
-			<?php if( have_rows('testimonials') ): ?>
-			<ul class="slides testimonials">
-			<?php while( have_rows('testimonials') ): the_row(); 
-				// vars
-				$words = get_sub_field('words');
-				$name = get_sub_field('name');
-				?>
-				<li class="slide">
-					<h4><?php echo $words; ?></h4>
-					<p><?php echo $name; ?></p>
-				</li>
-			<?php endwhile; ?>
-			</ul>
-			<?php endif; ?>
-			<!-- Testimonials -->
-		</div>
+
+<p>Delivery Notes: For <strong>FREE delivery</strong> in Melbourne metro area a minimum order quantity of <strong>50 grams</strong> is required (caviar &amp; truffles).<br /></p>
+<p>Chilled Aus Post shipping to Country Victoria or interstate to be quoted.</p>
+
+
+			
+			
+				<!-- Testimonials -->
+				<h3 class="feedback">Customer feedback</h3>
+				<?php if( have_rows('testimonials') ): ?>
+				<ul class="slides testimonials">
+				<?php while( have_rows('testimonials') ): the_row(); 
+					// vars
+					$words = get_sub_field('words');
+					$name = get_sub_field('name');
+					?>
+					<li class="slide">
+						<h4><?php echo $words; ?></h4>
+						<p><?php echo $name; ?></p>
+					</li>
+				<?php endwhile; ?>
+				</ul>
+				<?php endif; ?>
+				<!-- Testimonials -->
+
+
+<?php $the_query = new WP_Query( 'page_id=26' ); ?>
+
+<?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
+
+                       <?php the_content(); ?>
+
+<div class="products-container"><!-- start of .products-container -->
+                        <?php 
+					// check for rows (parent repeater)
+					if( have_rows('products') ): ?>
+						
+						<?php 
+	
+						// loop through rows (parent repeater)
+						while( have_rows('products') ): the_row(); ?>
+							<div class="products-box">
+								<h3><?php the_sub_field('title'); ?></h3>
+								<?php 
+	
+								// check for rows (sub repeater)
+								if( have_rows('product_price') ): ?>
+									<?php 
+	
+									// loop through rows (sub repeater)
+									while( have_rows('product_price') ): the_row();
+										?>
+										<?php 
+										echo '<div class="product-price"><p class="product">'; the_sub_field('product'); echo '</p>';
+										echo '<p class="price">'; the_sub_field('price'); echo '</p></div>';
+										?>
+									<?php endwhile; ?>
+								<?php endif; //if( get_sub_field('product_price') ): ?>
+							</div>	
+						<?php endwhile; // while( has_sub_field('product_type') ): ?>
+					<?php endif; // if( get_field('product_type') ): ?>
+                    </div><!-- end of .products-container -->
+
+     <?php endwhile;?>
+
+			</div>
 
 
 		<?php
