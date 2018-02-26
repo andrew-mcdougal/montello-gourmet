@@ -7,7 +7,7 @@
 
 ?>
 
-<div id="post-<?php the_ID(); ?>" <?php post_class(); ?> style="<?php storefront_homepage_content_styles(); ?>" data-featured-image="<?php echo $featured_image; ?>">
+<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<div class="col-full">
 		<div class="entry-content">
 			

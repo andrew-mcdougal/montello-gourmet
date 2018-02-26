@@ -4,6 +4,14 @@
 		$('.shop-news-box').slideDown('slow');
 	}
 
+	function homeAccordion() {
+		$( ".accordion-container" ).accordion({
+			collapsible: true,
+			active: 'none',
+			heightStyle: 'content'
+		});
+	}
+
 	function homeslides() {
 		$(".your-class").slick({
 			slidesToShow: 3,
@@ -71,6 +79,7 @@
 
 	$(window).on('load', function() {
 		//init();
+		homeAccordion();
 		setTimeout(homeslides, 200);
 		setTimeout(shopNewsShow, 5000);
 	});

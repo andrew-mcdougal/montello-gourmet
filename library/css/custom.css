@@ -53,52 +53,6 @@ html body {
   html body .hentry header {
     padding: 1em; }
 
-/*
-#masthead.site-header {
-	background: $primary;
-	padding-top: 1.5em;
-
-	.site-branding {
-		width: 40%;
-		margin-bottom: 1em;
-	}
-
-	.site-title a {
-		font-family: 'Great Vibes', cursive;
-		color: $secondary;
-		font-size: 2em;
-		line-height: 120%;
-		font-weight: 100;
-	}
-
-	.site-description {
-		margin-top: -1em;
-
-		p {
-			color: $secondary;
-			//color: lighten($secondary, 20%);
-			font-weight: 700;
-			margin: 0 0 0.5em;
-			position: relative;
-				left: 14px;
-
-			&:first-child {
-				position: relative;
-				left: 14px;
-				top: -2px;
-				font-weight: 700;
-				color: lighten($secondary, 35%);
-				//color: $secondary;
-			}
-		}
-	}
-
-	// nav
-	.storefront-primary-navigation {
-		background: $primary;
-	}
-}
-*/
 #masthead.site-header {
   background: #333;
   padding: 0.5em 0 0 0;
@@ -197,7 +151,8 @@ html body {
   display: none; }
 
 #content {
-  position: relative; }
+  position: relative;
+  font-size: 20px; }
   #content .col-full {
     margin: 0.5em;
     max-width: 100%; }
@@ -211,12 +166,35 @@ html body {
         font-size: 1.7em;
         padding-bottom: 0.5em;
         border-bottom: 1px solid #333; }
-    #content .col-full .entry-content h1 {
-      font-size: 1.5em;
-      padding-top: 0.25em; }
-    #content .col-full .entry-content p {
-      line-height: 120%;
-      font-size: 0.9em; }
+    #content .col-full .entry-content {
+      text-align: left; }
+      #content .col-full .entry-content h1 {
+        font-size: 1.5em;
+        padding-top: 0.25em; }
+      #content .col-full .entry-content p {
+        line-height: 140%; }
+
+.right-sidebar #page .content-area {
+  width: 100%;
+  float: none;
+  margin: 0; }
+  .right-sidebar #page .content-area .entry-content {
+    max-width: 760px;
+    margin: auto; }
+
+.products-box {
+  border: 1px solid #333;
+  padding: 1em;
+  border-radius: 5px;
+  margin: 0 0 1em 0; }
+  .products-box .product-price {
+    border-top: 1px solid #B79563;
+    padding: 1em 0; }
+    .products-box .product-price p {
+      display: inline-block;
+      vertical-align: top;
+      width: 48%;
+      margin: 0.5em 0; }
 
 #page .site-footer {
   padding: 0;
