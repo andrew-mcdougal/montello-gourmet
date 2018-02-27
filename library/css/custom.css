@@ -227,7 +227,11 @@ html body {
   .accordion-wrapper .accordion-open {
     text-align: center;
     color: #FFF;
-    cursor: pointer; }
+    cursor: pointer;
+    font-size: 0.9em; }
+    .accordion-wrapper .accordion-open .fa {
+      font-size: 1.25em;
+      margin-left: 0.5em; }
   .accordion-wrapper .accordion-title .fa {
     background: #FFF;
     border-radius: 50%;
@@ -278,6 +282,11 @@ html body {
     margin: 0;
     text-align: center; }
 
+@media all and (max-width: 768px) {
+  .testimonials h4 {
+    font-size: 1em; }
+  .testimonials .slick-dots li {
+    margin: 0 0.3em; } }
 .home-slider {
   max-width: 450px;
   margin: 1em auto; }
