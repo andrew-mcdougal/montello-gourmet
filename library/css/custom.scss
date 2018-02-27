@@ -575,6 +575,7 @@ html body {
 
 				li {
 					display: inline-block;
+					margin: 0 1em;
 
 					&:first-child {
 						margin-left: 0;
@@ -584,7 +585,7 @@ html body {
 						font-size: 1.25em;
 						font-weight: 800;
 						color: #FFF;
-						border-bottom: 1px solid rgba($secondary, 0.4);
+						border-bottom: 1px solid rgba($secondary, 0);
 						padding: 0.1em 0.25em;
 
 						&:hover {

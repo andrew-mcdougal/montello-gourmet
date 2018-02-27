@@ -340,14 +340,15 @@ html body {
       #masthead.site-header .storefront-primary-navigation .main-navigation ul.menu {
         text-align: center; }
         #masthead.site-header .storefront-primary-navigation .main-navigation ul.menu li {
-          display: inline-block; }
+          display: inline-block;
+          margin: 0 1em; }
           #masthead.site-header .storefront-primary-navigation .main-navigation ul.menu li:first-child {
             margin-left: 0; }
           #masthead.site-header .storefront-primary-navigation .main-navigation ul.menu li a {
             font-size: 1.25em;
             font-weight: 800;
             color: #FFF;
-            border-bottom: 1px solid rgba(183, 149, 99, 0.4);
+            border-bottom: 1px solid rgba(183, 149, 99, 0);
             padding: 0.1em 0.25em; }
             #masthead.site-header .storefront-primary-navigation .main-navigation ul.menu li a:hover {
               border-bottom: 1px solid #b79563;
