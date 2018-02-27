@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Chivo|Pathway+Gothic+One");
-@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Great+Vibes");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600i,700,800|Great+Vibes");
 body {
   background: linear-gradient(100deg, #31aded, #38d29c);
   background: #FFF; }
@@ -211,6 +211,72 @@ html body {
 
 .home-grid .columns {
   margin-bottom: 1em; }
+
+.delivery-notes {
+  margin: 1em; }
+  .delivery-notes p {
+    font-size: 0.85em;
+    color: #666666;
+    margin-bottom: 0.5em; }
+
+.accordion-wrapper {
+  background: #A566E7;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  margin-bottom: 1.5em; }
+  .accordion-wrapper .accordion-open {
+    text-align: center;
+    color: #FFF;
+    cursor: pointer; }
+  .accordion-wrapper .accordion-title .fa {
+    background: #FFF;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 2px;
+    color: #333; }
+  .accordion-wrapper .accordion-container {
+    display: none;
+    margin-top: 1em; }
+    .accordion-wrapper .accordion-container h4 {
+      font-size: 1em;
+      margin: 0.25em 0;
+      padding: 0.5em 0; }
+      .accordion-wrapper .accordion-container h4 a {
+        color: #FFF; }
+    .accordion-wrapper .accordion-container .product-price {
+      background: #d9bef5;
+      padding: 0 1em;
+      margin-bottom: 1px; }
+    .accordion-wrapper .accordion-container .product,
+    .accordion-wrapper .accordion-container .price {
+      display: inline-block;
+      vertical-align: top;
+      width: 48%;
+      font-size: 0.9em;
+      margin: 0.5em 0; }
+    .accordion-wrapper .accordion-container .price {
+      text-align: right; }
+
+.testimonials {
+  background: rgba(183, 149, 99, 0.1);
+  padding: 1em; }
+  .testimonials h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    display: inline-block;
+    border-bottom: 2px solid rgba(51, 51, 51, 0.8);
+    color: rgba(51, 51, 51, 0.8);
+    margin-bottom: 2em;
+    padding-bottom: 0.25em;
+    font-weight: 600;
+    font-style: italic; }
+  .testimonials ul {
+    list-style: none;
+    margin: 0;
+    text-align: center; }
 
 .home-slider {
   max-width: 450px;

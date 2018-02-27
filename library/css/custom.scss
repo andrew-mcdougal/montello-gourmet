@@ -1,11 +1,12 @@
 $primary: #333;
 $secondary: #B79563;
 $highlight: #A566E7;
+$white: #FFF;
 
 $font-main: 'Open Sans', sans-serif;
 
 @import url('https://fonts.googleapis.com/css?family=Chivo|Pathway+Gothic+One');
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800|Great+Vibes');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600i,700,800|Great+Vibes');
 
 // mixins
 @mixin transition($args...) {
@@ -375,6 +376,106 @@ html body {
 		margin-bottom: 1em;
 	}
 }
+
+// delivery notes
+.delivery-notes {
+	margin: 1em;
+
+	p {
+		font-size: 0.85em;
+		color: lighten($primary, 20%);
+		margin-bottom: 0.5em;
+	}
+}
+
+// accordion
+.accordion-wrapper {
+	background: $highlight;
+	padding: 0.5em 1em;
+	border-radius: 4px;
+	margin-bottom: 1.5em;
+
+	.accordion-open {
+		text-align: center;
+		color: $white;
+		cursor: pointer;
+	}
+
+	.accordion-title {
+
+		.fa {
+			background: $white;
+			border-radius: 50%;
+			width: 25px;
+			height: 25px;
+			text-align: center;
+			padding: 2px;
+			color: $primary;
+		}
+	}
+
+	.accordion-container {
+		display: none;
+		margin-top: 1em;
+
+		h4 {
+			font-size: 1em;
+			margin: 0.25em 0;
+			padding: 0.5em 0;
+
+			a {
+				color: $white;
+			}
+		}
+
+		.product-price {
+			background: lighten($highlight, 20%);
+			padding: 0 1em;
+			margin-bottom: 1px;
+		}
+
+		.product,
+		.price {
+			display: inline-block;
+			vertical-align: top;
+			width: 48%;
+			font-size: 0.9em;
+			margin: 0.5em 0;
+		}
+
+		.price {
+			text-align: right;
+		}
+	}
+}
+
+// testimonials
+.testimonials {
+	background: rgba($secondary, 0.1);
+	padding: 1em;
+
+	h3 {
+		text-align: center;
+		font-size: 1.5em;
+		font-weight: 500;
+		display: inline-block;
+		border-bottom: 2px solid rgba($primary, 0.8);
+		color: rgba($primary, 0.8);
+		margin-bottom: 2em;
+		padding-bottom: 0.25em;
+		font-weight: 600;
+		font-style: italic;
+	}
+
+	ul {
+		list-style: none;
+		margin: 0;
+		text-align: center;
+	}
+}
+
+// header
+
 
 // home slider
 .home-slider {

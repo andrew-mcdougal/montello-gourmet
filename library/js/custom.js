@@ -5,7 +5,15 @@
 	}
 
 	function homeAccordion() {
-		$( ".accordion-container" ).accordion({
+		var $accordionContainer = $('.accordion-container');
+		var $accordionOpen = $('.accordion-open');
+
+		// open accordion container
+		$accordionOpen.click(function() {
+			$accordionContainer.slideToggle('slow');
+		});
+
+		$(".accordion-container").accordion({
 			collapsible: true,
 			active: 'none',
 			heightStyle: 'content'
@@ -46,6 +54,16 @@
 		});
 	}
 
+	function homeTestimonials() {
+		$('.testimonial-slides').slick({
+			arrows: false,
+			dots: true,
+			adaptiveHeight: true,
+			autoplay: true,
+			autoplaySpeed: 7000,
+		});
+	}
+
 
 	
 	function questionsAccordion() {
@@ -80,6 +98,7 @@
 	$(window).on('load', function() {
 		//init();
 		homeAccordion();
+		setTimeout(homeTestimonials, 200);
 		setTimeout(homeslides, 200);
 		setTimeout(shopNewsShow, 5000);
 	});
