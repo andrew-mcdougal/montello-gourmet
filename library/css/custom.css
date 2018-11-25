@@ -15,10 +15,11 @@ html body {
   html body h4,
   html body h5,
   html body h6 {
-    font-weight: 800;
-    line-height: 120%; }
+    font-weight: 300;
+    line-height: 120%;
+    font-family: "Source Sans Pro", sans-serif; }
   html body h1 {
-    font-size: 1.8em;
+    font-size: 2.2em;
     margin-top: 0; }
   html body p {
     -ms-word-break: keep-all;
@@ -56,9 +57,14 @@ html body {
 #masthead.site-header {
   background: #333;
   padding: 0.5em 0 0 0;
-  border: none; }
+  border: none;
+  margin-bottom: 0; }
   #masthead.site-header .col-full {
     margin: 0; }
+  #masthead.site-header .site-search {
+    display: none; }
+  #masthead.site-header .cart-contents {
+    padding: 0; }
   #masthead.site-header .site-branding {
     width: 100%;
     margin-bottom: 1em; }
@@ -85,6 +91,12 @@ html body {
           font-weight: 700;
           color: #efe8dd;
           font-size: 1em; }
+  #masthead.site-header .main-navigation {
+    width: 100%;
+    float: none;
+    margin: 0; }
+  #masthead.site-header #site-header-cart {
+    display: none; }
   #masthead.site-header .storefront-primary-navigation {
     background: #333; }
     #masthead.site-header .storefront-primary-navigation .menu-toggle {
@@ -106,8 +118,7 @@ html body {
 
 .shop-news-box {
   background: #8b3ae0;
-  text-align: center;
-  display: none; }
+  text-align: center; }
   .shop-news-box p {
     margin: 0;
     padding: 0.5em;
@@ -121,6 +132,13 @@ html body {
     color: #FFF;
     border-radius: 3px;
     padding: 0.2em 0.4em; }
+
+#main .wp-caption {
+  margin: 0 0 2em 0; }
+  #main .wp-caption .wp-caption-text {
+    text-align: left;
+    font-size: 0.8rem;
+    font-style: normal; }
 
 .slick-slide {
   margin: 0;
@@ -156,6 +174,10 @@ html body {
   #content .col-full {
     margin: 0.5em;
     max-width: 100%; }
+    #content .col-full .woocommerce-breadcrumb {
+      max-width: 760px;
+      padding: 0;
+      margin: 0.5em auto; }
     #content .col-full .site-main,
     #content .col-full .hentry {
       padding: 0;
@@ -163,9 +185,10 @@ html body {
     #content .col-full .entry-header {
       padding: 0; }
       #content .col-full .entry-header h1 {
-        font-size: 1.7em;
+        font-size: 2.2em;
         padding-bottom: 0.5em;
-        border-bottom: 1px solid #333; }
+        border-bottom: 1px solid #333;
+        text-align: left; }
     #content .col-full .entry-content {
       text-align: left; }
       #content .col-full .entry-content h1 {
@@ -174,13 +197,29 @@ html body {
       #content .col-full .entry-content p {
         line-height: 140%; }
 
+.woocommerce-products-header,
+.storefront-sorting,
+.columns-3,
+.type-product,
+.woocommerce-message {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .right-sidebar #page .content-area {
   width: 100%;
   float: none;
   margin: 0; }
+  .right-sidebar #page .content-area .entry-header,
   .right-sidebar #page .content-area .entry-content {
     max-width: 760px;
     margin: auto; }
+
+.site-main .storefront-product-section {
+  max-width: 760px;
+  margin: 2em auto; }
+  .site-main .storefront-product-section.storefront-product-categories {
+    display: none; }
 
 .products-box {
   border: 1px solid #333;
@@ -195,6 +234,31 @@ html body {
       vertical-align: top;
       width: 48%;
       margin: 0.5em 0; }
+
+.wpcf7-form label {
+  margin-bottom: 0.5em;
+  display: block; }
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea {
+  border: none;
+  background: rgba(183, 149, 99, 0.2);
+  box-shadow: none;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5em;
+  font-size: 0.8em; }
+.wpcf7-form textarea {
+  height: 120px; }
+.wpcf7-form input[type="submit"] {
+  background: rgba(51, 51, 51, 0.7);
+  width: 100%;
+  border-radius: 4px;
+  color: #FFF; }
+  .wpcf7-form input[type="submit"]:hover {
+    background: #333;
+    color: #FFF; }
 
 #page .site-footer {
   padding: 0;
@@ -213,9 +277,9 @@ html body {
   margin-bottom: 1em; }
 
 .delivery-notes {
-  margin: 1em; }
+  margin: 1em;
+  font-size: .7em; }
   .delivery-notes p {
-    font-size: 0.85em;
     color: #666666;
     margin-bottom: 0.5em; }
 
@@ -223,7 +287,7 @@ html body {
   background: #A566E7;
   padding: 0.5em 1em;
   border-radius: 4px;
-  margin-bottom: 1.5em; }
+  margin: 1.5em 0; }
   .accordion-wrapper .accordion-open {
     text-align: center;
     color: #FFF;

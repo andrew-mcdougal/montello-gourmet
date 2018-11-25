@@ -10,19 +10,43 @@ function enqueue_parent_styles() {
 
 // custom homepage hook
 function storefront_homepage_content() {
+
+	// remove homepage hooked shop things
+	remove_action( 'homepage', 'storefront_recent_products', 30 );
+	remove_action( 'homepage', 'storefront_popular_products', 50 );
+	remove_action( 'homepage', 'storefront_best_selling_products', 70 );
+
 	while ( have_posts() ) {
 		the_post(); ?>
-<div class="entry-content">
-	<div class="delivery-notes">
-		<p>Delivery Notes: For <strong>FREE delivery</strong> in Melbourne metro area a minimum order quantity of <strong>50 grams</strong> is required (caviar &amp; truffles).<br /></p>
-		<p>Chilled Aus Post shipping to Country Victoria or interstate to be quoted.</p>
-	</div>
 
+<?php get_template_part( 'content', 'homepage' ); ?>
+
+<!-- testimonials -->
+<div class="entry-content testimonials">
+	<h3 class="feedback">Customer feedback...</h3>
+	<?php if( have_rows('testimonials') ): ?>
+	<ul class="testimonial-slides">
+	<?php while( have_rows('testimonials') ): the_row(); 
+		// vars
+		$words = get_sub_field('words');
+		$name = get_sub_field('name');
+		?>
+		<li class="slide">
+			<h4><?php echo $words; ?></h4>
+			<p><?php echo $name; ?></p>
+		</li>
+	<?php endwhile; ?>
+	</ul>
+	<?php endif; ?>
+</div>
+<!-- testimonials -->
+
+<div class="entry-content">
+	<!-- start accordion -->
 	<div class="accordion-wrapper">
 		<div class="accordion-open">
-			<p>view products &amp; pricing <i class="fa fa-angle-down"></i></p>
+			<p onclick="_gaq.push(['_trackEvent', 'Home clicks', 'Clicked', 'Product/pricing open accordion', 1]);">view products &amp; pricing <i class="fa fa-angle-down"></i></p>
 		</div>
-
 		<div class="accordion-container">
 			<?php $the_query = new WP_Query( 'page_id=26' ); ?>
 			<?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
@@ -58,34 +82,28 @@ function storefront_homepage_content() {
 	     <?php wp_reset_query(); ?>
 	 	</div>
 	 </div>
- </div>
-
-
-<?php get_template_part( 'content', 'homepage' ); ?>
-
-<!-- testimonials -->
-<div class="entry-content testimonials">
-	<h3 class="feedback">Customer feedback...</h3>
-	<?php if( have_rows('testimonials') ): ?>
-	<ul class="testimonial-slides">
-	<?php while( have_rows('testimonials') ): the_row(); 
-		// vars
-		$words = get_sub_field('words');
-		$name = get_sub_field('name');
-		?>
-		<li class="slide">
-			<h4><?php echo $words; ?></h4>
-			<p><?php echo $name; ?></p>
-		</li>
-	<?php endwhile; ?>
-	</ul>
-	<?php endif; ?>
+	 <!-- end accordion -->
+	 <div class="delivery-notes">
+		<p>Delivery Notes: For <strong>FREE delivery</strong> in Melbourne metro area a minimum order quantity of <strong>50 grams</strong> is required (caviar &amp; truffles).<br /></p>
+		<p>Chilled Aus Post shipping to Country Victoria or interstate to be quoted.</p>
+	</div>
 </div>
-<!-- testimonials -->
+
+
+
 <?php
 	} // end of the loop.
 }
 
+// remove widget on page content
+function storefront_sidebar() {
+	?>
+	<div class="site-info">
+		<p class="source-org copyright">&copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</p>
+		<p>site by <a href="http://ontrendwebsites.com" title="onTrend websites - Mobile friendly WordPress design and development" target="_blank">onTrend websites</a></p>
+	</div>
+	<?php
+}
 
 // custom footer hooked into storefront
 function storefront_credit() {
@@ -97,6 +115,10 @@ function storefront_credit() {
 	</div>
 	<?php
 }
+
+
+
+
 
 
 

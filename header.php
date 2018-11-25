@@ -31,8 +31,8 @@
 <div id="page" class="hfeed site">
 	<div class="shop-news-box">
 		<p>
-			<span class="highlight">New!</span> Caviar shop now open. 
-			<a class="caviar-shop-button-small" href="<?php echo get_home_url(); ?>/products">Buy Caviar</a>
+			<span class="highlight">We're open!</span> Online Caviar shop now open. 
+			<a class="caviar-shop-button-small" href="<?php echo get_home_url(); ?>/shop">Buy Caviar</a>
 		</p>
 	</div>
 	<?php do_action( 'storefront_before_header' ); ?>

@@ -100,7 +100,7 @@
 		homeAccordion();
 		setTimeout(homeTestimonials, 200);
 		setTimeout(homeslides, 200);
-		setTimeout(shopNewsShow, 5000);
+		//setTimeout(shopNewsShow, 5000);
 	});
 	
 	
