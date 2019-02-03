@@ -1,0 +1,428 @@
+@import url("https://fonts.googleapis.com/css?family=Chivo|Pathway+Gothic+One");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600i,700,800|Great+Vibes");
+body {
+  background: linear-gradient(100deg, #31aded, #38d29c);
+  background: #FFF; }
+
+html body {
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'Chivo', sans-serif;
+  font-family: "Open Sans", sans-serif;
+  color: #333; }
+  html body h1,
+  html body h2,
+  html body h3,
+  html body h4,
+  html body h5,
+  html body h6 {
+    font-weight: 300;
+    line-height: 120%;
+    font-family: "Source Sans Pro", sans-serif; }
+  html body h1 {
+    font-size: 2.2em;
+    margin-top: 0; }
+  html body p {
+    -ms-word-break: keep-all;
+    -ms-word-wrap: normal;
+    word-break: keep-all;
+    word-break: keep-all;
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    hyphens: none;
+    -webkit-hyphenate-before: 2;
+    -webkit-hyphenate-after: 3;
+    hyphenate-lines: 3;
+    -webkit-font-feature-settings: "liga", "dlig";
+    -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig"; }
+  html body .button {
+    border: none;
+    font-weight: 700;
+    background: #333;
+    color: #B79563;
+    padding: 0.5em 1em;
+    border-radius: 4px;
+    box-shadow: 0 4px #B79563;
+    position: relative;
+    top: 0;
+    transition: all 0.1s ease-in; }
+    html body .button:hover {
+      top: 2px;
+      box-shadow: 0 2px #B79563; }
+  html body .hentry header {
+    padding: 1em; }
+
+#masthead.site-header {
+  background: #333;
+  padding: 0.5em 0 0 0;
+  border: none;
+  margin-bottom: 0; }
+  #masthead.site-header .col-full {
+    margin: 0; }
+  #masthead.site-header .site-search {
+    display: none; }
+  #masthead.site-header .cart-contents {
+    padding: 0; }
+  #masthead.site-header .site-branding {
+    width: 100%;
+    margin-bottom: 1em; }
+    #masthead.site-header .site-branding .site-title {
+      font-size: 2.3em;
+      text-align: center;
+      line-height: 120%;
+      font-family: 'Great Vibes', cursive; }
+      #masthead.site-header .site-branding .site-title a {
+        color: #B79563;
+        font-weight: 100; }
+    #masthead.site-header .site-branding .site-description {
+      display: block;
+      text-align: center; }
+      #masthead.site-header .site-branding .site-description p {
+        color: #B79563;
+        font-weight: 700;
+        margin: 0 0 0.25em;
+        position: relative;
+        font-size: 0.7em; }
+        #masthead.site-header .site-branding .site-description p:first-child {
+          position: relative;
+          top: -2px;
+          font-weight: 700;
+          color: #efe8dd;
+          font-size: 1em; }
+  #masthead.site-header .main-navigation {
+    width: 100%;
+    float: none;
+    margin: 0; }
+  #masthead.site-header #site-header-cart {
+    display: none; }
+  #masthead.site-header .storefront-primary-navigation {
+    background: #333; }
+    #masthead.site-header .storefront-primary-navigation .menu-toggle {
+      width: 100%;
+      border: none;
+      border-radius: 0; }
+    #masthead.site-header .storefront-primary-navigation .main-navigation ul li a {
+      padding: 0.5em 1em;
+      background: #333;
+      color: #B79563; }
+      #masthead.site-header .storefront-primary-navigation .main-navigation ul li a:hover {
+        background: rgba(183, 149, 99, 0.7);
+        color: #333; }
+    #masthead.site-header .storefront-primary-navigation .main-navigation .current_page_item a {
+      background: rgba(183, 149, 99, 0.7);
+      color: #333; }
+    #masthead.site-header .storefront-primary-navigation .main-navigation.toggled ul li {
+      border-bottom: 1px solid rgba(183, 149, 99, 0.15); }
+
+.shop-news-box {
+  background: #8b3ae0;
+  text-align: center; }
+  .shop-news-box p {
+    margin: 0;
+    padding: 0.5em;
+    color: #E7E466; }
+    .shop-news-box p .highlight {
+      font-weight: 600; }
+  .shop-news-box .caviar-shop-button-small {
+    z-index: 1000;
+    font-size: 0.8em;
+    background: #333;
+    color: #FFF;
+    border-radius: 3px;
+    padding: 0.2em 0.4em; }
+
+#main .wp-caption {
+  margin: 0 0 2em 0; }
+  #main .wp-caption .wp-caption-text {
+    text-align: left;
+    font-size: 0.8rem;
+    font-style: normal; }
+
+.slick-slide {
+  margin: 0;
+  text-align: center; }
+  .slick-slide .wp-caption {
+    margin: auto; }
+    .slick-slide .wp-caption .wp-caption-text {
+      text-align: center;
+      font-size: 0.7em; }
+
+.slick-dots {
+  margin: 0 0 1em 0;
+  padding: 0; }
+  .slick-dots li {
+    display: inline-block;
+    background: #333;
+    width: 0.5em;
+    height: 0.5em;
+    border-radius: 50%;
+    margin: 0 1em;
+    opacity: 0.5; }
+    .slick-dots li.slick-active {
+      opacity: 1; }
+    .slick-dots li button {
+      display: none; }
+
+.page-template-template-homepage .type-page .storefront-hero__button-edit {
+  display: none; }
+
+#content {
+  position: relative;
+  font-size: 20px; }
+  #content .col-full {
+    margin: 0.5em;
+    max-width: 100%; }
+    #content .col-full .woocommerce-breadcrumb {
+      max-width: 760px;
+      padding: 0;
+      margin: 0.5em auto; }
+    #content .col-full .site-main,
+    #content .col-full .hentry {
+      padding: 0;
+      margin-bottom: 3em; }
+    #content .col-full .entry-header {
+      padding: 0; }
+      #content .col-full .entry-header h1 {
+        font-size: 2.2em;
+        padding-bottom: 0.5em;
+        border-bottom: 1px solid #333;
+        text-align: left; }
+    #content .col-full .entry-content {
+      text-align: left; }
+      #content .col-full .entry-content h1 {
+        font-size: 1.5em;
+        padding-top: 0.25em; }
+      #content .col-full .entry-content p {
+        line-height: 140%; }
+
+.woocommerce-products-header,
+.storefront-sorting,
+.columns-3,
+.type-product,
+.woocommerce-message {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.right-sidebar #page .content-area {
+  width: 100%;
+  float: none;
+  margin: 0; }
+  .right-sidebar #page .content-area .entry-header,
+  .right-sidebar #page .content-area .entry-content {
+    max-width: 760px;
+    margin: auto; }
+
+.site-main .storefront-product-section {
+  max-width: 760px;
+  margin: 2em auto; }
+  .site-main .storefront-product-section.storefront-product-categories {
+    display: none; }
+
+.products-box {
+  border: 1px solid #333;
+  padding: 1em;
+  border-radius: 5px;
+  margin: 0 0 1em 0; }
+  .products-box .product-price {
+    border-top: 1px solid #B79563;
+    padding: 1em 0; }
+    .products-box .product-price p {
+      display: inline-block;
+      vertical-align: top;
+      width: 48%;
+      margin: 0.5em 0; }
+
+.wpcf7-form label {
+  margin-bottom: 0.5em;
+  display: block; }
+.wpcf7-form input[type="text"],
+.wpcf7-form input[type="email"],
+.wpcf7-form textarea {
+  border: none;
+  background: rgba(183, 149, 99, 0.2);
+  box-shadow: none;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5em;
+  font-size: 0.8em; }
+.wpcf7-form textarea {
+  height: 120px; }
+.wpcf7-form input[type="submit"] {
+  background: rgba(51, 51, 51, 0.7);
+  width: 100%;
+  border-radius: 4px;
+  color: #FFF; }
+  .wpcf7-form input[type="submit"]:hover {
+    background: #333;
+    color: #FFF; }
+
+#page .site-footer {
+  padding: 0;
+  text-align: center; }
+  #page .site-footer .site-info {
+    padding: 2em 1em; }
+    #page .site-footer .site-info p {
+      margin: 0; }
+      #page .site-footer .site-info p a {
+        color: #A566E7;
+        border-bottom: 1px solid rgba(165, 102, 231, 0.5); }
+        #page .site-footer .site-info p a:hover {
+          border-color: #a566e7; }
+
+.home-grid .columns {
+  margin-bottom: 1em; }
+
+.delivery-notes {
+  margin: 1em;
+  font-size: .7em; }
+  .delivery-notes p {
+    color: #666666;
+    margin-bottom: 0.5em; }
+
+.accordion-wrapper {
+  background: #A566E7;
+  padding: 0.5em 1em;
+  border-radius: 4px;
+  margin: 1.5em 0; }
+  .accordion-wrapper .accordion-open {
+    text-align: center;
+    color: #FFF;
+    cursor: pointer;
+    font-size: 0.9em; }
+    .accordion-wrapper .accordion-open .fa {
+      font-size: 1.25em;
+      margin-left: 0.5em; }
+  .accordion-wrapper .accordion-title .fa {
+    background: #FFF;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    padding: 2px;
+    color: #333; }
+  .accordion-wrapper .accordion-container {
+    display: none;
+    margin-top: 1em; }
+    .accordion-wrapper .accordion-container h4 {
+      font-size: 1em;
+      margin: 0.25em 0;
+      padding: 0.5em 0; }
+      .accordion-wrapper .accordion-container h4 a {
+        color: #FFF; }
+    .accordion-wrapper .accordion-container .product-price {
+      background: #d9bef5;
+      padding: 0 1em;
+      margin-bottom: 1px; }
+    .accordion-wrapper .accordion-container .product,
+    .accordion-wrapper .accordion-container .price {
+      display: inline-block;
+      vertical-align: top;
+      width: 48%;
+      font-size: 0.9em;
+      margin: 0.5em 0; }
+    .accordion-wrapper .accordion-container .price {
+      text-align: right; }
+
+.testimonials {
+  background: rgba(183, 149, 99, 0.1);
+  padding: 1em; }
+  .testimonials h3 {
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: 500;
+    display: inline-block;
+    border-bottom: 2px solid rgba(51, 51, 51, 0.8);
+    color: rgba(51, 51, 51, 0.8);
+    margin-bottom: 2em;
+    padding-bottom: 0.25em;
+    font-weight: 600;
+    font-style: italic; }
+  .testimonials ul {
+    list-style: none;
+    margin: 0;
+    text-align: center; }
+
+@media all and (max-width: 768px) {
+  .testimonials h4 {
+    font-size: 1em; }
+  .testimonials .slick-dots li {
+    margin: 0 0.3em; } }
+.home-slider {
+  max-width: 450px;
+  margin: 1em auto; }
+
+@media all and (min-width: 550px) {
+  .home-slider {
+    max-width: 100%; }
+    .home-slider .slick-slide {
+      margin: 0 1em; } }
+@media all and (min-width: 768px) {
+  #masthead.site-header {
+    background: #333;
+    padding-top: 1.5em; }
+    #masthead.site-header .col-full {
+      padding: 0.5em 1em;
+      max-width: 100%;
+      width: 100%;
+      position: relative;
+      text-align: center;
+      box-sizing: border-box; }
+    #masthead.site-header .site-branding {
+      display: block;
+      width: 370px;
+      margin-bottom: 1em;
+      float: none;
+      margin: 0 auto 2em; }
+      #masthead.site-header .site-branding .site-title {
+        text-align: left; }
+        #masthead.site-header .site-branding .site-title a {
+          font-family: 'Great Vibes', cursive;
+          color: #B79563;
+          font-size: 1.7em;
+          line-height: 120%;
+          font-weight: 100; }
+      #masthead.site-header .site-branding .site-description {
+        margin-top: -1em;
+        text-align: left; }
+        #masthead.site-header .site-branding .site-description p {
+          color: #B79563;
+          margin: 0 0 0.5em;
+          left: 14px;
+          font-size: 1em; }
+          #masthead.site-header .site-branding .site-description p:first-child {
+            left: 14px;
+            top: -2px; }
+    #masthead.site-header .storefront-primary-navigation {
+      background: #333;
+      width: 100%;
+      margin: 0;
+      padding: 0; }
+      #masthead.site-header .storefront-primary-navigation .main-navigation ul.menu {
+        text-align: center; }
+        #masthead.site-header .storefront-primary-navigation .main-navigation ul.menu li {
+          display: inline-block;
+          margin: 0 1em; }
+          #masthead.site-header .storefront-primary-navigation .main-navigation ul.menu li:first-child {
+            margin-left: 0; }
+          #masthead.site-header .storefront-primary-navigation .main-navigation ul.menu li a {
+            font-size: 1.25em;
+            font-weight: 800;
+            color: #FFF;
+            border-bottom: 1px solid rgba(183, 149, 99, 0);
+            padding: 0.1em 0.25em; }
+            #masthead.site-header .storefront-primary-navigation .main-navigation ul.menu li a:hover {
+              border-bottom: 1px solid #b79563;
+              color: #B79563;
+              background: transparent; }
+          #masthead.site-header .storefront-primary-navigation .main-navigation ul.menu li.current_page_item a {
+            border-bottom: 1px solid #b79563;
+            color: #B79563;
+            background: transparent; }
+    #masthead.site-header #site-header-cart {
+      background: #FFF; } }
+
+/*# sourceMappingURL=custom.css.map */
