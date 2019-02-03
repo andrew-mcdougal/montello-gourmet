@@ -1,4 +1,4 @@
-$primary: #333;
+$primary: #262626;
 $secondary: #B79563;
 $highlight: #A566E7;
 $white: #FFF;
@@ -115,6 +115,7 @@ html body {
 
 	.col-full {
 		margin: 0;
+		position: relative;
 	}
 
 	// remove product search
@@ -721,7 +722,43 @@ html body {
 
 
 
+// search
+#masthead.site-header .col-full.searchbar {
+	padding: 10px;
+	color: $white;
+	font-size: .9em;
+	margin-top: 1em;
+	//background: darken($primary, 5%);
 
+	p {
+		text-align: center;
+		margin-bottom: 0;
+	}
+
+	.searchform {
+		display: grid;
+		grid-template-columns: auto auto;
+		max-width: 500px;
+		margin: 1em auto;
+
+		input {
+			border-radius: 4px 0 0 4px;
+		}
+
+		button {
+			background: $secondary;
+			border-radius: 0 4px 4px 0;
+		}
+	}
+}
+
+.search-results {
+
+	.page-header {
+		max-width: 760px;
+		margin: auto;
+	}
+}
 
 
 
