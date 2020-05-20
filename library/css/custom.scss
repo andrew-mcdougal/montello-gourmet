@@ -2,6 +2,7 @@ $primary: #262626;
 $secondary: #B79563;
 $highlight: #A566E7;
 $white: #FFF;
+$purple: #96588a;
 
 $font-main: 'Open Sans', sans-serif;
 $font-heading: 'Source Sans Pro', sans-serif;
@@ -760,9 +761,69 @@ html body {
 	}
 }
 
+// Improvements November 2019
+.c-btn {
+	display: block;
+	padding: 8px;
+	border-radius: 5px;
+	text-align: center;
+	color: $purple;
+	border: 2px solid $purple;
+
+	&:hover {
+		color: $white;
+		background: $purple;
+	}
+
+	&.c-btn--solid {
+		color: $white;
+		background: $purple;
+
+		&:hover {
+			background: darken($purple, 10%);
+		}
+	}
+}
 
 
+.caviar-shop-button {
+	text-align: center;
+	font-size: 1.5em;
 
+	a {
+		display: block;
+		margin: .5em;
+		color: #eee;
+		border: 2px solid #eee;
+		padding: .25em .5em;
+		border-radius: 5px;
+		font-size: .8em;
+
+		&:hover {
+			background: #eee;
+			color: #262626;
+		}
+	}
+
+	@media all and (min-width: 450px) {
+
+		a {
+			display: inline-block;
+			font-size: 1em;
+		}
+	}
+}
+
+#content {
+	z-index: 1000;
+}
+
+@media all and (max-width: 768px) {
+
+	#masthead.site-header {
+		padding-bottom: 1em;
+	}
+}
 
 
 
