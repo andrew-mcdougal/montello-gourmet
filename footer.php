@@ -35,5 +35,7 @@
 
 <?php wp_footer(); ?>
 
+<script type="text/javascript" src="//downloads.mailchimp.com/js/signup-forms/popup/unique-methods/embed.js" data-dojo-config="usePlainJson: true, isDebug: false"></script><script type="text/javascript">window.dojoRequire(["mojo/signup-forms/Loader"], function(L) { L.start({"baseUrl":"mc.us4.list-manage.com","uuid":"528c9a7ef88c9cfed332536db","lid":"9191bf4706","uniqueMethods":true}) })</script>
+
 </body>
 </html>

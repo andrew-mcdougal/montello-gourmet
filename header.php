@@ -32,7 +32,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
 
-  gtag('config', 'UA-29126133-1');
+  gtag('config', 'UA-29126133-1', { 'optimize_id': 'GTM-PB4867L'});
 </script>
 
 
@@ -52,12 +52,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <?php do_action( 'storefront_before_site' ); ?>
 
 <div id="page" class="hfeed site">
-	<div class="shop-news-box">
-		<p>
-			<span class="highlight">We're open!</span> Online Caviar shop. 
-			<a class="caviar-shop-button-small" href="<?php echo get_home_url(); ?>/shop" onclick="_gaq.push(['_trackEvent', 'Header', 'Clicked', 'Buy Caviar slidedown button', 1]);">Buy Caviar</a>
-		</p>
-	</div>
 	<?php do_action( 'storefront_before_header' ); ?>
 
 	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
@@ -80,6 +74,21 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 			do_action( 'storefront_header' ); ?>
 
 		</div>
+
+		<!-- search bar and contact links -->
+		<div class="col-full searchbar grid-columns-three">
+			<?php //get_search_form(); ?>
+			<div>
+				<p>
+					Mobile: <a href="tel:61416218147" target="blank">+61 416 218 147</a><br>
+					Email: <a href="mailto:tony@montellogourmet.com?subject=Enquiry from website">tony@montellogourmet.com</a>
+				</p>
+			</div>
+		</div>
+		<div class="caviar-shop-button">
+			<a href="<?php echo get_home_url(); ?>/product-category/caviar" onclick="_gaq.push(['_trackEvent', 'Header', 'Clicked', 'Buy Caviar slidedown button', 1]);">Buy Caviar</a>
+		</div>
+
 	</header><!-- #masthead -->
 
 	<?php

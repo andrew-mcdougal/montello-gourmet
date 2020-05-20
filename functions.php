@@ -42,47 +42,6 @@ function storefront_homepage_content() {
 <!-- testimonials -->
 
 <div class="entry-content">
-	<!-- start accordion -->
-	<div class="accordion-wrapper">
-		<div class="accordion-open">
-			<p onclick="_gaq.push(['_trackEvent', 'Home clicks', 'Clicked', 'Product/pricing open accordion', 1]);">view products &amp; pricing <i class="fa fa-angle-down"></i></p>
-		</div>
-		<div class="accordion-container">
-			<?php $the_query = new WP_Query( 'page_id=26' ); ?>
-			<?php while ($the_query -> have_posts()) : $the_query -> the_post();  ?>
-	            
-	        <?php 
-	        if( have_rows('products') ): 
-	        // count for dynamic accordion header link
-	        $count = 0;
-	        while( have_rows('products') ): the_row();
-	        $count++;
-	        ?>
-	        <!-- accordion header link -->
-	        <h4>
-	        	<a href="#accordion<?php echo $count; ?>" aria-expanded="false" aria-controls="accordion<?php echo $count; ?>" class="accordion-title">
-	        		<i class="fa fa-angle-down"></i>
-	        		<?php the_sub_field('simple_product_title'); ?>
-	        	</a>
-	        </h4>
-	        <!-- accordion header link -->
-
-	        <!-- accordion content -->
-	        <div class="accordion-content" id="accordion<?php echo $count; ?>" aria-hidden="true">
-				<?php  if( have_rows('product_price') ): while( have_rows('product_price') ): the_row();
-				echo '<div class="product-price"><p class="product">'; the_sub_field('product'); echo '</p>';
-				echo '<p class="price">'; the_sub_field('price'); echo '</p></div>';
-				endwhile; endif;
-				?>
-			</div>
-			<!-- accordion content -->
-
-			<?php endwhile; endif; ?>
-	     <?php endwhile; ?>
-	     <?php wp_reset_query(); ?>
-	 	</div>
-	 </div>
-	 <!-- end accordion -->
 	 <div class="delivery-notes">
 		<p>Delivery Notes: For <strong>FREE delivery</strong> in Melbourne metro area a minimum order quantity of <strong>50 grams</strong> is required (caviar &amp; truffles).<br /></p>
 		<p>Chilled Aus Post shipping to Country Victoria or interstate to be quoted.</p>
@@ -116,8 +75,14 @@ function storefront_credit() {
 	<?php
 }
 
+// ADD SHORTCODE TO TOP OF SINGLE PRODUCT 
 
-
+/*
+ * add_action( 'woocommerce_before_single_product', 'enfold_customization_extra_product_content', 15 );
+function enfold_customization_extra_product_content() {
+    echo wc_yotpo_show_widget();
+}
+*/
 
 
 
@@ -129,7 +94,7 @@ function storefront_site_branding() { ?>
 		<a href="<?php echo home_url(); ?>" rel="nofollow">Montello Gourmet</a>
 	</div>
 	<div class="site-description">
-		<p>Specialty food ingredients.</p>
+		<p>Online Caviar store</p>
 		<p>Melbourne based supply, Australia wide delivery.</p>
 	</div>
 </div>

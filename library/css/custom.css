@@ -8,7 +8,7 @@ html body {
   font-family: 'Pathway Gothic One', sans-serif;
   font-family: 'Chivo', sans-serif;
   font-family: "Open Sans", sans-serif;
-  color: #333; }
+  color: #262626; }
   html body h1,
   html body h2,
   html body h3,
@@ -40,7 +40,7 @@ html body {
   html body .button {
     border: none;
     font-weight: 700;
-    background: #333;
+    background: #262626;
     color: #B79563;
     padding: 0.5em 1em;
     border-radius: 4px;
@@ -55,12 +55,13 @@ html body {
     padding: 1em; }
 
 #masthead.site-header {
-  background: #333;
+  background: #262626;
   padding: 0.5em 0 0 0;
   border: none;
   margin-bottom: 0; }
   #masthead.site-header .col-full {
-    margin: 0; }
+    margin: 0;
+    position: relative; }
   #masthead.site-header .site-search {
     display: none; }
   #masthead.site-header .cart-contents {
@@ -85,12 +86,6 @@ html body {
         margin: 0 0 0.25em;
         position: relative;
         font-size: 0.7em; }
-        #masthead.site-header .site-branding .site-description p:first-child {
-          position: relative;
-          top: -2px;
-          font-weight: 700;
-          color: #efe8dd;
-          font-size: 1em; }
   #masthead.site-header .main-navigation {
     width: 100%;
     float: none;
@@ -98,21 +93,21 @@ html body {
   #masthead.site-header #site-header-cart {
     display: none; }
   #masthead.site-header .storefront-primary-navigation {
-    background: #333; }
+    background: #262626; }
     #masthead.site-header .storefront-primary-navigation .menu-toggle {
       width: 100%;
       border: none;
       border-radius: 0; }
     #masthead.site-header .storefront-primary-navigation .main-navigation ul li a {
       padding: 0.5em 1em;
-      background: #333;
+      background: #262626;
       color: #B79563; }
       #masthead.site-header .storefront-primary-navigation .main-navigation ul li a:hover {
         background: rgba(183, 149, 99, 0.7);
-        color: #333; }
+        color: #262626; }
     #masthead.site-header .storefront-primary-navigation .main-navigation .current_page_item a {
       background: rgba(183, 149, 99, 0.7);
-      color: #333; }
+      color: #262626; }
     #masthead.site-header .storefront-primary-navigation .main-navigation.toggled ul li {
       border-bottom: 1px solid rgba(183, 149, 99, 0.15); }
 
@@ -128,7 +123,7 @@ html body {
   .shop-news-box .caviar-shop-button-small {
     z-index: 1000;
     font-size: 0.8em;
-    background: #333;
+    background: #262626;
     color: #FFF;
     border-radius: 3px;
     padding: 0.2em 0.4em; }
@@ -154,7 +149,7 @@ html body {
   padding: 0; }
   .slick-dots li {
     display: inline-block;
-    background: #333;
+    background: #262626;
     width: 0.5em;
     height: 0.5em;
     border-radius: 50%;
@@ -187,7 +182,7 @@ html body {
       #content .col-full .entry-header h1 {
         font-size: 2.2em;
         padding-bottom: 0.5em;
-        border-bottom: 1px solid #333;
+        border-bottom: 1px solid #262626;
         text-align: left; }
     #content .col-full .entry-content {
       text-align: left; }
@@ -222,7 +217,7 @@ html body {
     display: none; }
 
 .products-box {
-  border: 1px solid #333;
+  border: 1px solid #262626;
   padding: 1em;
   border-radius: 5px;
   margin: 0 0 1em 0; }
@@ -252,12 +247,12 @@ html body {
 .wpcf7-form textarea {
   height: 120px; }
 .wpcf7-form input[type="submit"] {
-  background: rgba(51, 51, 51, 0.7);
+  background: rgba(38, 38, 38, 0.7);
   width: 100%;
   border-radius: 4px;
   color: #FFF; }
   .wpcf7-form input[type="submit"]:hover {
-    background: #333;
+    background: #262626;
     color: #FFF; }
 
 #page .site-footer {
@@ -280,8 +275,11 @@ html body {
   margin: 1em;
   font-size: .7em; }
   .delivery-notes p {
-    color: #666666;
+    color: #595959;
     margin-bottom: 0.5em; }
+
+.page-template-template-homepage #content .entry-content p:last-child {
+  margin-bottom: revert; }
 
 .accordion-wrapper {
   background: #A566E7;
@@ -303,7 +301,7 @@ html body {
     height: 25px;
     text-align: center;
     padding: 2px;
-    color: #333; }
+    color: #262626; }
   .accordion-wrapper .accordion-container {
     display: none;
     margin-top: 1em; }
@@ -335,8 +333,8 @@ html body {
     font-size: 1.5em;
     font-weight: 500;
     display: inline-block;
-    border-bottom: 2px solid rgba(51, 51, 51, 0.8);
-    color: rgba(51, 51, 51, 0.8);
+    border-bottom: 2px solid rgba(38, 38, 38, 0.8);
+    color: rgba(38, 38, 38, 0.8);
     margin-bottom: 2em;
     padding-bottom: 0.25em;
     font-weight: 600;
@@ -362,7 +360,7 @@ html body {
       margin: 0 1em; } }
 @media all and (min-width: 768px) {
   #masthead.site-header {
-    background: #333;
+    background: #262626;
     padding-top: 1.5em; }
     #masthead.site-header .col-full {
       padding: 0.5em 1em;
@@ -394,10 +392,15 @@ html body {
           left: 14px;
           font-size: 1em; }
           #masthead.site-header .site-branding .site-description p:first-child {
-            left: 14px;
-            top: -2px; }
+            position: relative;
+            top: -7px;
+            left: 23px;
+            font-weight: 700;
+            color: #efe8dd;
+            font-size: 1.3em;
+            margin: 0; }
     #masthead.site-header .storefront-primary-navigation {
-      background: #333;
+      background: #262626;
       width: 100%;
       margin: 0;
       padding: 0; }
@@ -424,5 +427,43 @@ html body {
             background: transparent; }
     #masthead.site-header #site-header-cart {
       background: #FFF; } }
+#masthead.site-header .col-full.searchbar {
+  padding: 10px;
+  color: #FFF;
+  font-size: .9em;
+  margin-top: 1em; }
+  #masthead.site-header .col-full.searchbar p {
+    text-align: center;
+    margin-bottom: 0;
+    color: #B79563; }
+    #masthead.site-header .col-full.searchbar p > a {
+      color: #FFF;
+      text-decoration: underline; }
+  #masthead.site-header .col-full.searchbar .searchform {
+    display: grid;
+    grid-template-columns: auto auto;
+    max-width: 500px;
+    margin: 1em auto; }
+    #masthead.site-header .col-full.searchbar .searchform input {
+      border-radius: 4px 0 0 4px; }
+    #masthead.site-header .col-full.searchbar .searchform button {
+      background: #B79563;
+      border-radius: 0 4px 4px 0; }
+
+.search-results .page-header {
+  max-width: 760px;
+  margin: auto; }
+
+.caviar-shop-button {
+  text-align: center;
+  font-size: 1.5em; }
+  .caviar-shop-button a {
+    margin: .5em;
+    color: #eee;
+    border: 2px solid #eee;
+    padding: .25em .5em;
+    border-radius: 5px;
+    font-size: .8em;
+    display: inline-block; }
 
 /*# sourceMappingURL=custom.css.map */
