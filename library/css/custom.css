@@ -86,12 +86,6 @@ html body {
         margin: 0 0 0.25em;
         position: relative;
         font-size: 0.7em; }
-        #masthead.site-header .site-branding .site-description p:first-child {
-          position: relative;
-          top: -2px;
-          font-weight: 700;
-          color: #efe8dd;
-          font-size: 1em; }
   #masthead.site-header .main-navigation {
     width: 100%;
     float: none;
@@ -284,6 +278,9 @@ html body {
     color: #595959;
     margin-bottom: 0.5em; }
 
+.page-template-template-homepage #content .entry-content p:last-child {
+  margin-bottom: revert; }
+
 .accordion-wrapper {
   background: #A566E7;
   padding: 0.5em 1em;
@@ -395,8 +392,13 @@ html body {
           left: 14px;
           font-size: 1em; }
           #masthead.site-header .site-branding .site-description p:first-child {
-            left: 14px;
-            top: -2px; }
+            position: relative;
+            top: -7px;
+            left: 23px;
+            font-weight: 700;
+            color: #efe8dd;
+            font-size: 1.3em;
+            margin: 0; }
     #masthead.site-header .storefront-primary-navigation {
       background: #262626;
       width: 100%;
@@ -432,7 +434,11 @@ html body {
   margin-top: 1em; }
   #masthead.site-header .col-full.searchbar p {
     text-align: center;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    color: #B79563; }
+    #masthead.site-header .col-full.searchbar p > a {
+      color: #FFF;
+      text-decoration: underline; }
   #masthead.site-header .col-full.searchbar .searchform {
     display: grid;
     grid-template-columns: auto auto;
@@ -448,46 +454,16 @@ html body {
   max-width: 760px;
   margin: auto; }
 
-.c-btn {
-  display: block;
-  padding: 8px;
-  border-radius: 5px;
-  text-align: center;
-  color: #96588a;
-  border: 2px solid #96588a; }
-  .c-btn:hover {
-    color: #FFF;
-    background: #96588a; }
-  .c-btn.c-btn--solid {
-    color: #FFF;
-    background: #96588a; }
-    .c-btn.c-btn--solid:hover {
-      background: #76456c; }
-
 .caviar-shop-button {
   text-align: center;
   font-size: 1.5em; }
   .caviar-shop-button a {
-    display: block;
     margin: .5em;
     color: #eee;
     border: 2px solid #eee;
     padding: .25em .5em;
     border-radius: 5px;
-    font-size: .8em; }
-    .caviar-shop-button a:hover {
-      background: #eee;
-      color: #262626; }
-  @media all and (min-width: 450px) {
-    .caviar-shop-button a {
-      display: inline-block;
-      font-size: 1em; } }
-
-#content {
-  z-index: 1000; }
-
-@media all and (max-width: 768px) {
-  #masthead.site-header {
-    padding-bottom: 1em; } }
+    font-size: .8em;
+    display: inline-block; }
 
 /*# sourceMappingURL=custom.css.map */

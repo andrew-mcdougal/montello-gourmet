@@ -11,3 +11,5 @@
 [09-Jan-2019 11:10:10 America/Denver] PHP Fatal error:  Call to undefined function language_attributes() in /home2/montell1/public_html/wp-content/themes/storefront-child/header.php on line 11
 [26-Jan-2019 15:50:12 America/Denver] PHP Fatal error:  Call to undefined function language_attributes() in /home2/montell1/public_html/wp-content/themes/storefront-child/header.php on line 11
 [26-Jan-2019 15:50:12 America/Denver] PHP Fatal error:  Call to undefined function language_attributes() in /home2/montell1/public_html/wp-content/themes/storefront-child/header.php on line 11
+[19-Feb-2019 21:17:21 America/Denver] PHP Fatal error:  Call to undefined function language_attributes() in /home2/montell1/public_html/wp-content/themes/storefront-child/header.php on line 11
+[19-Feb-2019 21:17:24 America/Denver] PHP Fatal error:  Call to undefined function language_attributes() in /home2/montell1/public_html/wp-content/themes/storefront-child/header.php on line 11
