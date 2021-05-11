@@ -211,6 +211,10 @@ html body {
   }
 }
 
+.main-navigation .nav-menu {
+	max-height: none;
+}
+
 .shop-news-box {
   background: darken($highlight, 10%);
   text-align: center;
@@ -361,7 +365,7 @@ html body {
 
       .entry-header,
       .entry-content {
-        max-width: 760px;
+        max-width: 960px;
         margin: auto;
       }
     }
@@ -615,13 +619,30 @@ html body {
 }
 
 @media all and (min-width: 768px) {
+
+// header grid
+#masthead .col-full {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 2rem;
+
+  &:before {
+    display: none;
+  }
+
+  .header-right {
+    margin: auto;
+  }
+}
+
   #masthead.site-header {
     background: $primary;
     padding-top: 1.5em;
 
     .col-full {
       padding: 0.5em 1em;
-      max-width: 100%;
+      max-width: 960px;
+      margin: auto;
       width: 100%;
       position: relative;
       text-align: center;
@@ -633,7 +654,7 @@ html body {
       width: 370px;
       margin-bottom: 1em;
       float: none;
-      margin: 0 auto 2em;
+      margin: auto;
 
       .site-title {
         text-align: left;

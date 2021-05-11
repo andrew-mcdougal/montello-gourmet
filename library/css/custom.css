@@ -111,6 +111,9 @@ html body {
     #masthead.site-header .storefront-primary-navigation .main-navigation.toggled ul li {
       border-bottom: 1px solid rgba(183, 149, 99, 0.15); }
 
+.main-navigation .nav-menu {
+  max-height: none; }
+
 .shop-news-box {
   background: #8b3ae0;
   text-align: center; }
@@ -207,7 +210,7 @@ html body {
   margin: 0; }
   .right-sidebar #page .content-area .entry-header,
   .right-sidebar #page .content-area .entry-content {
-    max-width: 760px;
+    max-width: 960px;
     margin: auto; }
 
 .site-main .storefront-product-section {
@@ -359,12 +362,22 @@ html body {
     .home-slider .slick-slide {
       margin: 0 1em; } }
 @media all and (min-width: 768px) {
+  #masthead .col-full {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem; }
+    #masthead .col-full:before {
+      display: none; }
+    #masthead .col-full .header-right {
+      margin: auto; }
+
   #masthead.site-header {
     background: #262626;
     padding-top: 1.5em; }
     #masthead.site-header .col-full {
       padding: 0.5em 1em;
-      max-width: 100%;
+      max-width: 960px;
+      margin: auto;
       width: 100%;
       position: relative;
       text-align: center;
@@ -374,7 +387,7 @@ html body {
       width: 370px;
       margin-bottom: 1em;
       float: none;
-      margin: 0 auto 2em; }
+      margin: auto; }
       #masthead.site-header .site-branding .site-title {
         text-align: left; }
         #masthead.site-header .site-branding .site-title a {
